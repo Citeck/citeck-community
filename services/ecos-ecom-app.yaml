@@ -9,11 +9,15 @@ services:
     hostname: ecos-ecom-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-ecom:1.10.0
+    image: nexus.citeck.ru/ecos-ecom:1.11.1
+    ports:
+      - 18022:18022/tcp
+    environment:
+      - SERVER_PORT=18022
     env_file:
       - ./environments/ecos-ecom-app.env
     healthcheck:
-      test: [ "CMD", "wget", "-q", "--spider", "http://localhost:8686/management/health" ]
+      test: [ "CMD", "wget", "-q", "--spider", "http://localhost:18022/management/health" ]
       interval: 20s
       timeout: 20s
       retries: 36

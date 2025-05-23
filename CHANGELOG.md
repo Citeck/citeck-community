@@ -1,6 +1,47 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
-# ECOS Changelog
+# Citeck Changelog
+
+## [2025.1.2] - 2025-05-15
+
+### Added
+
+- Workspaces for user collaboration on a specific set of functional capabilities, documents, files, processes
+- Corporate portal with new widgets "Wiki", "News", "Welcome" that keeps together various tools, information and services in one place
+- New journal design
+- Functional modules (Service desk, Contracts and etc) are allocated over workspaces
+- Workspace support for left menu
+- Updated module Assignments for work with workspaces
+- Anonymous [Umami usage analytics](https://umami.is/docs). Umami does not collect or store personal data, avoiding the need for cookies, and is GDPR and PECR compliant. 
+- Data types. UNIQUE setting to text attribute
+- BPMN. Calendar notifications option
+- BPMN. User task. Set task due date with working-calendar option
+- Ability to apply theme from Themes journal
+- User profile. Separated user rights to edit profile attributes
+- Notification Service. Test message setting
+- Global search for types in ecos-model:  by documents (types can be customized), people (users), workspaces.
+- Ability to setup list view data display mode
+- Ability to create empty document (document, spreadsheet, presentation) in workspace doclib
+- Colored Formatter. New functions
+- Orgstructure component. Ability to set dynamically the root group (via scripts depending on the conditions on the form)
+- React JS updated to version 18.3
+
+#### Fixed
+
+- Template generation functionality problem after upgrading transformation microservice version
+- Service desk. Mis-calculatings in SLA, resolution field, incorrect due date calculation
+- Service desk. SLA is calculated incorrectly
+- Journal "Menu". Error loading actions.
+- Contracts. Error in process of supplementary agreements
+- Contracts. Permissions Denied error
+- Notification templates. Column filtering does not work
+- Doclib. Link to download the document leads to the card itself
+- Document Widget. Error when uploading multiple files
+- Document Widget. Document preview does not work for txt, html, xml, json, yaml file types
+- System artifacts can't be added to ecos-app
+- BPMN. Error on handling catch event transaction
+- Profile. Mandatory fields
+- Orgstructure. Deleting a parent group
 
 ## [2024.10] - 2025-01-27
 

@@ -7,13 +7,15 @@ services:
     hostname: ecos-uiserv-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-uiserv:2.27.2
-    expose:
-      - 8081/tcp
+    image: nexus.citeck.ru/ecos-uiserv:2.28.3
+    ports:
+      - 18030:18030/tcp
+    environment:
+      - SERVER_PORT=18030
     env_file:
       - ./environments/ecos-uiserv-app.env
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8081/management/health"]
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:18030/management/health"]
       interval: 20s
       timeout: 20s
       retries: 36

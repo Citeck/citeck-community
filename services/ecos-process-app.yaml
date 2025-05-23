@@ -7,13 +7,15 @@ services:
     hostname: ecos-process-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-process:2.22.0
-    expose:
-      - 8098/tcp
+    image: nexus.citeck.ru/ecos-process:2.23.2
+    ports:
+      - 18027:18027/tcp
+    environment:
+      - SERVER_PORT=18027
     env_file:
       - ./environments/ecos-process-app.env
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8098/management/health"]
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:18027/management/health"]
       interval: 20s
       timeout: 20s
       retries: 36

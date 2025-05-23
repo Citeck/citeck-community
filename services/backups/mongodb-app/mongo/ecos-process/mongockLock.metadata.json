@@ -1,1 +1,1 @@
-{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"ecos-process.mongockLock"},{"v":2,"unique":true,"key":{"key":1},"name":"key_1","ns":"ecos-process.mongockLock"}],"uuid":"3d5d907bcea849b78cb6cf135fa5142a"}
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"ecos-process.mongockLock"},{"v":2,"unique":true,"key":{"key":1},"name":"key_1","ns":"ecos-process.mongockLock"}],"uuid":"ec2ebe4226614dbdb98e65b1ddf1e1be"}

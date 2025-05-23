@@ -8,8 +8,8 @@ services:
     restart: always
     stop_grace_period: 1m
     image: nexus.citeck.ru/mongo:4.0-demo
-    expose:
-      - 27017/tcp
+    ports:
+      - "27017:27017"
     env_file:
       - ./environments/mongodb-app.env
       - ./environments/demo_data.env

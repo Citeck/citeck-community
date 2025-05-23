@@ -8,8 +8,8 @@ services:
     restart: always
     stop_grace_period: 1m
     image: nexus.citeck.ru/jhipster-registry:v4.1.1
-    expose:
-      - 8761/tcp
+    ports:
+      - 8761:8761/tcp
     env_file:
       - ./environments/ecos-registry-app.env
     volumes:

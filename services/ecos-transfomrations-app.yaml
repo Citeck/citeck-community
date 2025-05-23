@@ -7,13 +7,15 @@ services:
     hostname: ecos-transformations-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-transformations:1.12.0
-    expose:
-      - 8098/tcp
+    image: nexus.citeck.ru/ecos-transformations:1.13.0
+    ports:
+      - 18029:18029/tcp
+    environment:
+      - SERVER_PORT=18029
     env_file:
       - ./environments/ecos-transformations-app.env
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8087/management/health"]
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:18029/management/health"]
       interval: 20s
       timeout: 20s
       retries: 36

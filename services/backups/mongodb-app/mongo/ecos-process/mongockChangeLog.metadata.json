@@ -1,1 +1,1 @@
-{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"ecos-process.mongockChangeLog"},{"v":2,"unique":true,"key":{"author":1,"changeId":1},"name":"author_1_changeId_1","ns":"ecos-process.mongockChangeLog"}],"uuid":"8e44d1772fea4438b1d08ff7a2101906"}
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"ecos-process.mongockChangeLog"},{"v":2,"unique":true,"key":{"author":1,"changeId":1},"name":"author_1_changeId_1","ns":"ecos-process.mongockChangeLog"}],"uuid":"60c12e97415240b1baf4ba4b3e17dc6b"}

@@ -10,8 +10,8 @@ services:
     image: registry.citeck.ru/community/onlyoffice/documentserver:7.3.3
     env_file:
       - ./environments/only-office-app.env
-    expose:
-      - 80/tcp
+    ports:
+      - 8070:80/tcp
       - 443/tcp
     volumes:
       - ./ecos-community-demo-data/only-office-app/document_data:/var/www/onlyoffice/Data

@@ -8,7 +8,8 @@ services:
     restart: always
     stop_grace_period: 1m
     image: nexus.citeck.ru/mailhog:latest
-    expose:
-      - 1025/tcp
+    ports:
+      - 1025:1025
+      - 8025:8025/tcp
     networks:
       - app_network

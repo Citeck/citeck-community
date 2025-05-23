@@ -107,6 +107,14 @@ services:
     extends:
       file: ./services/ecos-apps-app.yaml
       service: ecos-contracts-ecos-apps
+  corporate-portal-ecos-apps:
+    extends:
+      file: ./services/ecos-apps-app.yaml
+      service: corporate-portal-ecos-apps
+  ecos-vacations-ecos-apps:
+    extends:
+      file: ./services/ecos-apps-app.yaml
+      service: ecos-vacations-ecos-apps
   ecos-apps-app:
     extends:
       file: ./services/ecos-apps-app.yaml

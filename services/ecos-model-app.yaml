@@ -7,13 +7,15 @@ services:
     hostname: ecos-model-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-model:2.29.9
-    expose:
-      - 8094/tcp
+    image: nexus.citeck.ru/ecos-model:2.30.9
+    ports:
+      - 18025:18025/tcp
+    environment:
+      - SERVER_PORT=18025
     env_file:
       - ./environments/ecos-model-app.env
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8094/management/health"]
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:18025/management/health"]
       interval: 20s
       timeout: 20s
       retries: 36

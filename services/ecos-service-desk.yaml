@@ -9,7 +9,11 @@ services:
     hostname: ecos-service-desk-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-service-desk:1.13.8
+    image: nexus.citeck.ru/ecos-service-desk:1.15.4
+    ports:
+      - 18028:18028/tcp
+    environment:
+      - SERVER_PORT=18028
     env_file:
       - ./environments/ecos-service-desk-app.env
     networks:

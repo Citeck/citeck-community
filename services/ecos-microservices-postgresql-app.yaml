@@ -7,15 +7,17 @@ services:
     hostname: ecos-microservices-postgresql-app
     restart: always
     stop_grace_period: 1m
-    image: registry.citeck.ru/community/postgresql:12.7-3-community-demo-0
-    expose:
-      - 5432/tcp
+    image: registry.citeck.ru/community/postgresql:12.7-3-community-demo-1
+    ports:
+      - 15432:5432/tcp
+    environment:
+      - DEMO_DATA_DUMP_PATH=/tmp/dump_demo.sql.gz
     env_file:
       - ./environments/ecos-microservices-postgresql-app.env
       - ./environments/demo_data.env
     volumes:
       - ./ecos-community-demo-data/ecos-microservices-postgresql-app:/var/lib/postgresql/data
-      - ./backups/ecos-microservices-postgresql-app/dump_demo.sql:/tmp/dump_demo.sql
+      - ./backups/ecos-microservices-postgresql-app/dump_demo.sql.gz:/tmp/dump_demo.sql.gz
     healthcheck:
       test: ["CMD-SHELL", "psql -h localhost -U uiserv -d ecos_uiserv -c 'SELECT 1;'"]
       interval: 20s

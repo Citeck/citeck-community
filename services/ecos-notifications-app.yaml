@@ -7,15 +7,17 @@ services:
     hostname: ecos-notifications-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-notifications:2.21.1
-    expose:
-      - 8013/tcp
+    image: nexus.citeck.ru/ecos-notifications:2.22.0
+    ports:
+      - 18026:18026/tcp
+    environment:
+      - SERVER_PORT=18026
     env_file:
       - ./environments/ecos-notifications-app.env
     volumes:
       - ./configs/ecos-notifications-app:/credentials
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8013/management/health"]
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:18026/management/health"]
       interval: 20s
       timeout: 20s
       retries: 36

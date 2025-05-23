@@ -9,9 +9,9 @@ services:
     stop_grace_period: 1m
     command: ["/init.sh"]
     image: nexus.citeck.ru/rabbitmq:3.7.18-management-alpine
-    expose:
-      - 15672/tcp
-      - 15692/tcp
+    ports:
+      - 15672:15672/tcp
+      - 5672:5672/tcp
     env_file:
       - ./environments/rabbitmq-app.env
     volumes:

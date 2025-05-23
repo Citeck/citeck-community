@@ -7,16 +7,18 @@ services:
     hostname: ecos-history-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-history:2.21.0
-    expose:
-      - 8086/tcp
+    image: nexus.citeck.ru/ecos-history:2.22.0
+    ports:
+      - 18024:18024/tcp
+    environment:
+      - SERVER_PORT=18024
     env_file:
       - ./environments/ecos-history-app.env
     volumes:
       - ./ecos-community-demo-data/ecos-history-app/source:/source
       - ./ecos-community-demo-data/ecos-history-app/errors:/errors
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8086/management/health"]
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:18024/management/health"]
       interval: 20s
       timeout: 20s
       retries: 36

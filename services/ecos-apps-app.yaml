@@ -7,82 +7,90 @@ services:
     hostname: ecos-apps-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-apps:2.21.2
+    image: nexus.citeck.ru/ecos-apps:2.22.2
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-artifacts/app/ecosapp
-    expose:
-      - 8089/tcp
+    ports:
+      - 18021:18021/tcp
+    environment:
+      - SERVER_PORT=18021
     env_file:
       - ./environments/ecos-apps-app.env
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8089/management/health"]
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:18021/management/health"]
       interval: 20s
       timeout: 20s
       retries: 36
     networks:
       - app_network
   ecos-order-pass-ecos-apps:
-    image: nexus.citeck.ru/ecos-order-pass:1.2.1
+    image: nexus.citeck.ru/ecos-order-pass:1.3.2
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-meetings-ecos-apps:
-    image: nexus.citeck.ru/ecos-meetings:1.4.0
+    image: nexus.citeck.ru/ecos-meetings:1.5.0
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-common-data-list-ecos-apps:
-    image: nexus.citeck.ru/ecos-common-data-list:1.10.1
+    image: nexus.citeck.ru/ecos-common-data-list:1.11.3
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-assignments-ecos-apps:
-    image: nexus.citeck.ru/ecos-assignments:1.4.0
+    image: nexus.citeck.ru/ecos-assignments:2.1.1
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-time-tracking-ecos-apps:
-    image: nexus.citeck.ru/ecos-time-tracking:1.3.0
+    image: nexus.citeck.ru/ecos-time-tracking:1.5.0
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-offers-ecos-apps:
-    image: nexus.citeck.ru/ecos-offers:1.6.0
+    image: nexus.citeck.ru/ecos-offers:1.7.0
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-crm-ecos-apps:
-    image: nexus.citeck.ru/ecos-crm:1.9.0
+    image: nexus.citeck.ru/ecos-crm:1.10.1
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-aro-ecos-apps:
-    image: nexus.citeck.ru/ecos-aro:1.4.1
+    image: nexus.citeck.ru/ecos-aro:1.5.0
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-correspondence-ecos-apps:
-    image: nexus.citeck.ru/ecos-correspondence:1.3.1
+    image: nexus.citeck.ru/ecos-correspondence:1.4.1
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-contracts-ecos-apps:
-    image: nexus.citeck.ru/ecos-contracts:1.7.2
+    image: nexus.citeck.ru/ecos-contracts:1.9.2
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-vacations-ecos-apps:
-    image: nexus.citeck.ru/ecos-vacations:1.3.4
+    image: nexus.citeck.ru/ecos-vacations:1.4.3
+    environment:
+      - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
+    volumes:
+      - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
+  corporate-portal-ecos-apps:
+    image: nexus.citeck.ru/corporate-portal:1.0.2
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:

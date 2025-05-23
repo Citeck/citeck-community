@@ -1,10 +1,10 @@
 ![Citeck ECOS Logo](https://raw.githubusercontent.com/Citeck/ecos-ui/master/public/img/logo/ecos-logo.svg)
 
-# Citeck Community Demo
+# Citeck Community
 
 **На других языках: [Английский](README.md)**
 
-Данный репозиторий представляет собой настройку Docker Compose для запуска «Citeck Community Demo». 
+Данный репозиторий представляет собой настройку Docker Compose для запуска «Citeck Community». 
 
 **Citeck** – система управления корпоративным контентом, позволяющая управлять бизнес-процессами, документами и задачами.
 
@@ -21,17 +21,17 @@
 #### 1. Клонируйте репозиторий
 
 ```bash
-git clone https://github.com/citeck/ecos-community-demo.git
+git clone https://github.com/citeck/citeck-community.git
 ```
 
 **Note**: 
-ecos-community-demo поставляется с предзаполненными демонстрационными данными. 
+citeck-community поставляется с предзаполненными демонстрационными данными. 
 Для отключения данной настройки перед разворачиванием стенда перейдите в папку `\services\environments` в файлах `ecos-microservices-postgresql.env` и `mongodb-app.env` в настройке `WITH_DEMO_DATA` измените **true** на **false**
 
 #### 2. Перейдите в папку с клонированным репозиторием :
 
 ```bash
-cd ecos-community-demo
+cd citeck-community
 ```
 
 #### 3. Запустите Docker Compose:
@@ -42,7 +42,7 @@ docker-compose up -d
 
 Команда запустит необходимые контейнеры Docker. Загрузка образов и настройка окружений может занять некоторое время.
 
-#### 4. Доступ к Citeck Community Demo:
+#### 4. Доступ к Citeck Community:
 
 Перейдите в браузере по адресу `http://localhost/`
 

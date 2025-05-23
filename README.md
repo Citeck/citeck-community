@@ -1,10 +1,10 @@
 ![Citeck ECOS Logo](https://raw.githubusercontent.com/Citeck/ecos-ui/master/public/img/logo/ecos-logo.svg)
 
-# Citeck Community Demo
+# Citeck Community
 
 **Read this in other languages: [Русский](README.RU.MD)**
 
-This repository provides a Docker Compose setup for running the `Citeck Community Demo`. The Citeck is an
+This repository provides a Docker Compose setup for running the `Citeck Community`. The Citeck is an
 enterprise content management system that allows managing business processes, documents, and tasks.
 
 ## Prerequisites
@@ -20,17 +20,17 @@ Make sure you have the following prerequisites installed on your system:
 #### 1. Clone this repository:
 
 ```bash
-git clone https://github.com/citeck/ecos-community-demo.git
+git clone https://github.com/citeck/citeck-community.git
 ```
 
-**Note**: ecos-community-demo comes with pre-filled demo data. To disable this setting before deploying the stand go to
+**Note**: citeck-community comes with pre-filled demo data. To disable this setting before deploying the stand go to
 the `\services\environments folder` and in files `ecos-microservices-postgresql.env`, `mongodb-app.env` change
 setting `WITH_DEMO_DATA` from **true** to **false**.
 
 #### 2. Navigate to the cloned repository:
 
 ```bash
-cd ecos-community-demo
+cd citeck-community
 ```
 
 #### 3. Start the Docker Compose setup:
@@ -42,15 +42,15 @@ docker-compose up -d
 This command will build and start the necessary Docker containers. It may take a few minutes to download the required
 images and set up the environment.
 
-#### 4. Access the Citeck Community Demo:
+#### 4. Access the Citeck Community:
 
 Once the Docker containers are up and running, you can access the
-Citeck Community Demo by opening your web browser and visiting `http://localhost/`. The demo should be
+Citeck Community by opening your web browser and visiting `http://localhost/`. The demo should be
 available at this URL.
 
 ## Usage
 
-The Citeck Community Demo provides a pre-configured environment for testing and exploring the capabilities of the
+The Citeck Community provides a pre-configured environment for testing and exploring the capabilities of the
 Citeck system. You can log in using the following credentials:
 
 - Username: `admin`
