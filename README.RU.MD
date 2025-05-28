@@ -26,7 +26,7 @@ git clone https://github.com/citeck/citeck-community.git
 
 **Note**: 
 citeck-community поставляется с предзаполненными демонстрационными данными. 
-Для отключения данной настройки перед разворачиванием стенда перейдите в папку `\services\environments` в файлах `ecos-microservices-postgresql.env` и `mongodb-app.env` в настройке `WITH_DEMO_DATA` измените **true** на **false**
+Для отключения перед разворачиванием стенда перейдите в папку `\services\environments` в файле `demo_data.env` в настройке `WITH_DEMO_DATA` измените **true** на **false**
 
 #### 2. Перейдите в папку с клонированным репозиторием :
 
