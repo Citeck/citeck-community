@@ -24,8 +24,7 @@ git clone https://github.com/citeck/citeck-community.git
 ```
 
 **Note**: citeck-community comes with pre-filled demo data. To disable this setting before deploying the stand go to
-the `\services\environments folder` and in files `ecos-microservices-postgresql.env`, `mongodb-app.env` change
-setting `WITH_DEMO_DATA` from **true** to **false**.
+the `\services\environments folder` and in file `demo_data.env` change setting `WITH_DEMO_DATA` from **true** to **false**.
 
 #### 2. Navigate to the cloned repository:
 
