@@ -7,7 +7,7 @@ services:
     hostname: ecos-uiserv-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-uiserv:2.28.3
+    image: nexus.citeck.ru/ecos-uiserv:2.28.6
     ports:
       - 18030:18030/tcp
     environment:

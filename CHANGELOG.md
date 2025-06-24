@@ -2,6 +2,24 @@
 
 # Citeck Changelog
 
+## [2025.1.7] - 2025-06-24
+
+### Added
+- Add widgets to mobile dashboards
+- Add orgstructure into WS Datalists
+- New fields in common data lists
+
+#### Fixed
+
+- Heatmap. Incorrect simplified mode
+- Widget Knowledge Base permissions
+- HTML Widget permissions
+- Welcome Widget adaptive mode fix
+- Knowledge Base. Edit action is displayed without permissions
+- Translate localization fix of calendar into Russian
+- Browser navigation(back, forward) doesn't work with workspaces
+- Fix txn rolling back for closed connection
+
 ## [2025.1.3] - 2025-05-26
 
 ### Added
