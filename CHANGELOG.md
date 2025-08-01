@@ -2,6 +2,29 @@
 
 # Citeck Changelog
 
+## [2025.5] - 2025-07-28
+
+### Added
+
+- Cross-platform launcher for Citeck: one-click local deployment of Citeck Community with or without demo data
+- Client 360 functionality. Counterparty card consists of tabs for counterparty related informationton: history of changes, documents, CRM deals, contracts,correspondence, projects.
+- BPMN. User task. Comment field added to a default task form
+- LinkFormatter improvements: display link setting
+- Orgstructure improvements
+- Ability to configure card name for kanban board
+- WYSIWYG editor improvements
+- Table form. Ability to select record from data-list
+
+#### Fixed
+
+- Onlyoffice. Wrong displayed cursor when editing a file
+- Menu. Editing menu for a default workspace
+- Workspaces. Custom settings templates are displayed in a new created workspace
+- Workspaces. Browser navigation 
+- Journal. Edit values in cells
+- Kanban. Displaying full name for the Responsible
+- BPMN task slow loading with filter
+
 ## [2025.1.7] - 2025-06-24
 
 ### Added
