@@ -7,7 +7,7 @@ services:
     hostname: ecos-process-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-process:2.23.2
+    image: nexus.citeck.ru/ecos-process:2.24.0
     ports:
       - 18027:18027/tcp
     environment:
