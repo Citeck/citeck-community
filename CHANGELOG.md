@@ -1,8 +1,10 @@
 <!-- Keep a Changelog guide -> https://keepachangelog.com -->
 
+**На других языках: [Русский](CHANGELOG.RU.md)**
+
 # Citeck Changelog
 
-## [2025.5] - 2025-07-28
+## [2025.5] - 2025-08-01
 
 ### Added
 
@@ -84,7 +86,7 @@
 - Profile. Mandatory fields
 - Orgstructure. Deleting a parent group
 
-## [2024.10] - 2025-01-27
+## [2024.10] - 2025-01-31
 
 ### Added
 
@@ -108,7 +110,7 @@
 - KeyManagementException: problem accessing trust store
 - Module "Order pass". Notification error
 
-## [2024.8.3] - 2024-10-21
+## [2024.8.3] - 2024-11-07
 
 ### Fixed
 
@@ -121,7 +123,7 @@
 - Active tasks. Incorrect pagination
 - Orstructure. Double scrolls
 
-## [2024.8] - 2024-09-29
+## [2024.8] - 2024-09-20
 
 ### Added
 
@@ -145,7 +147,7 @@
 - Orgstructure. Incorrect search
 
 
-## [2024.7] - 2024-07-08
+## [2024.7] - 2024-07-23
 
 ### Added
 
@@ -204,7 +206,7 @@
 - Journal grouping now work for groupable assoc attribute.
 
 
-## [4.8.0] - 2023-12-07
+## [4.8.0] - 2023-12-12
 
 ### Added
 
@@ -227,7 +229,7 @@
 - Missing actions in journals at modules "Correspondence. Income documents", "Contracts", "ORD"
 - OpenOffice component to preview documents
 
-## [4.7.0] - 2023-09-26
+## [4.7.0] - 2023-10-03
 
 ### Added
 - Created new readable process model for module "Offers" 
@@ -242,7 +244,7 @@
 - No history entry in Events history after creating an assignments with this document
 - Bugs in module "Correspondence. Income documents"
 
-## [4.6.0] - 2023-08-25
+## [4.6.0] - 2023-08-28
 
 ### Added
 - Expand the capabilities of search queries by implementing table joining support
