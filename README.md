@@ -32,7 +32,7 @@ You can deploy Citeck Community using either a convenient **Citeck cross-platfor
 
      Wait for the data to download and verify.
 
-3. Click **Update&Start** to download and deploy the images.
+3. Images downloading and deploying will start automatically.
 
 4. Wait until all microservices and applications reach the **Running** status, then click **Open In Browser**.
 
