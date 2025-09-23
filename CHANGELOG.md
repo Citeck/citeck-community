@@ -4,6 +4,32 @@
 
 # Citeck Changelog
 
+## [2025.8] - 2025-09-XX
+
+### Added
+
+- Journals. Tiles view mode
+- Journals. Data preview dashboard with ability to configure widgets
+- Gantt chart widget to visualize the project work plan as a timeline
+- Select Journal Component. Ability to search within workspaces
+- Data lists. Unified dashboard, special dashboards for Сounterparties, Legal Entities
+- Setting to hide the Create button in the left menu
+- Setting to hide create new entry button in journals
+- Knowledge Base improvements
+
+#### Fixed
+
+- "Full name" field is cleared on the editing form
+- Computed value not returned correctly for arrays of associations
+- Error in the "Download all documents" action
+- Error is duplicated on workspace when editing a card
+- Stack trace is shown on IllegalStateException
+- Checkbox: hidden property does not changed by logic action, 
+- Checkbox: checkbox with true/false status is displayed incorrectly
+- Menu. No filtering for the list
+- Admin section workspace. Incorrect dashboard editing
+- The button for resizing the comment/note field does not work
+
 ## [2025.5] - 2025-08-01
 
 ### Added
