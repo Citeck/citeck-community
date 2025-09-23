@@ -17,7 +17,7 @@
 - Setting to hide create new entry button in journals
 - Knowledge Base improvements
 
-#### Fixed
+### Fixed
 
 - "Full name" field is cleared on the editing form
 - Computed value not returned correctly for arrays of associations
@@ -43,7 +43,7 @@
 - WYSIWYG editor improvements
 - Table form. Ability to select record from data-list
 
-#### Fixed
+### Fixed
 
 - Onlyoffice. Wrong displayed cursor when editing a file
 - Menu. Editing menu for a default workspace
@@ -60,7 +60,7 @@
 - Add orgstructure into WS Datalists
 - New fields in common data lists
 
-#### Fixed
+### Fixed
 
 - Heatmap. Incorrect simplified mode
 - Widget Knowledge Base permissions
@@ -95,7 +95,7 @@
 - Orgstructure component. Ability to set dynamically the root group (via scripts depending on the conditions on the form)
 - React JS updated to version 18.3
 
-#### Fixed
+### Fixed
 
 - Template generation functionality problem after upgrading transformation microservice version
 - Service desk. Mis-calculatings in SLA, resolution field, incorrect due date calculation
@@ -126,7 +126,7 @@
 - Journals. Optimized data loading and data display
 - Doclib. Uploading multiple files, folder with subfolders and files, deleting and moving files and folders, validation of identical files
 
-#### Fixed
+### Fixed
 
 - Data type is ignored when uploading to excel
 - SLA doesn't change when the priority is changed
