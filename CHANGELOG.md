@@ -14,7 +14,7 @@
 - Select Journal Component. Ability to search and agregate data within workspaces
 - Data lists. Unified dashboard, special dashboards for Сounterparties, Legal Entities
 - Setting to hide the Create button in the left menu
-- Setting to hide create new entry button in journals
+- Journal widget. Setting to hide create new entry button in a journal
 - Knowledge Base improvements
 
 ### Fixed
