@@ -11,7 +11,7 @@
 - Journals. Tiles view mode
 - Journals. Data preview dashboard with ability to configure widgets
 - Gantt chart widget to visualize the project work plan as a timeline
-- Select Journal Component. Ability to search and agregate data within workspaces
+- Select Journal Component. Ability to select workspaces to search and agregate data within 
 - Data lists. Unified dashboard, special dashboards for Сounterparties, Legal Entities
 - Setting to hide the Create button in the left menu
 - Journal widget. Setting to hide create new entry button in a journal
