@@ -15,7 +15,7 @@
 - Select Journal Component. Ability to select workspaces to search and agregate data within 
 - Data lists. Unified dashboard, special dashboards for Сounterparties, Legal Entities
 - Setting to hide the Create button in the left menu
-- Menu. The ability to hide a section's title and collapse a section by default.
+- Menu setting. The ability to collapse a section by default.
 - Journal widget. Setting to hide create new entry button in a journal
 - Knowledge Base improvements
 
