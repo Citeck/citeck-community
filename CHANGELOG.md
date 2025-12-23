@@ -8,17 +8,20 @@
 
 ### Added
 
-- The ability for a workspace manager to create artifacts in the workspace.
-- Journals. Tiles view mode.
-- Journals. Data preview dashboard with ability to configure widgets.
-- Journals. Added a menu widget to the data preview dashboard. It's providing a dynamic tree-like representation of the category structure.
-- Gantt chart widget to visualize the project work plan as a timeline.
-- Workspace. Users assigned the Workspace Manager role are authorized to create local artifacts, such as data types, journals, forms, BPMN processes, DMN, etc.
-- Select Journal Component. Ability to select workspaces to search and agregate data within.
-- Data lists. Unified dashboard, special dashboards for Сounterparties, Legal Entities.
-- Setting to hide the Create button in the left menu.
-- Menu setting. The ability to collapse a section by default.
-- Journal widget. Setting to hide create new entry button in a journal.
+- The ability for a workspace manager to create artifacts in the workspace
+- Journals. Tiles view mode
+- Journals. Data preview dashboard with ability to configure widgets
+- Journals. Added a menu widget to the data preview dashboard. It's providing a dynamic tree-like representation of the category structure
+- Updated design of the SelectJournal and SelectOrgstruct components
+- Gantt chart widget to visualize the project work plan as a timeline
+- Workspace. Users assigned the Workspace Manager role are authorized to create local artifacts, such as data types, journals, forms, BPMN processes, DMN, etc
+- Select Journal Component. Ability to select workspaces to search and agregate data within
+- Data lists. Unified dashboard, special dashboards for Сounterparties, Legal Entities
+- Setting to hide the Create button in the left menu
+- Menu setting. The ability to collapse a section by default
+- Menu setting. The ability to specify attributes from the workspace in an arbitrary menu item
+- Action widget. The ability to add two buttons to one verdict on the form
+- Journal widget. Setting to hide create new entry button in a journal
 - Group journal. User journal. Gonfigured data import from XLS
 - Knowledge Base improvements
 
