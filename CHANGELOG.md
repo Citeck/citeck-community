@@ -24,6 +24,7 @@
 - Journal widget. Setting to hide create new entry button in a journal
 - Group journal. User journal. Gonfigured data import from XLS
 - Knowledge Base improvements
+- Module Contracts improvements
 
 ### Fixed
 
