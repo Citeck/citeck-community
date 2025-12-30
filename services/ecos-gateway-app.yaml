@@ -7,7 +7,7 @@ services:
     hostname: ecos-gateway-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-gateway:3.2.1
+    image: nexus.citeck.ru/ecos-gateway:3.3.0
     expose:
       - 8085/tcp
     env_file:

@@ -9,7 +9,7 @@ services:
     hostname: ecos-ecom-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-ecom:1.12.0
+    image: nexus.citeck.ru/ecos-ecom:1.13.2
     ports:
       - 18022:18022/tcp
     environment:

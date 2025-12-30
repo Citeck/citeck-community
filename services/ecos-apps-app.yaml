@@ -7,7 +7,7 @@ services:
     hostname: ecos-apps-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-apps:2.23.0
+    image: nexus.citeck.ru/ecos-apps:2.24.4
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-artifacts/app/ecosapp
     ports:
@@ -36,7 +36,7 @@ services:
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-common-data-list-ecos-apps:
-    image: nexus.citeck.ru/ecos-common-data-list:1.14.0
+    image: nexus.citeck.ru/ecos-common-data-list:1.16.0
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
@@ -60,7 +60,7 @@ services:
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-crm-ecos-apps:
-    image: nexus.citeck.ru/ecos-crm:2.2.1
+    image: nexus.citeck.ru/ecos-crm:2.3.0
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
@@ -78,7 +78,7 @@ services:
     volumes:
       - ./ecos-community-demo-data/ecos-apps:/run/ecos-apps-target
   ecos-contracts-ecos-apps:
-    image: nexus.citeck.ru/ecos-contracts:1.10.0
+    image: nexus.citeck.ru/ecos-contracts:1.13.0
     environment:
       - ECOS_APPS_TARGET_DIR=/run/ecos-apps-target
     volumes:
