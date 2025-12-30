@@ -4,6 +4,41 @@
 
 # Citeck Changelog
 
+## [2025.8] - 2025-12-XX
+
+### Added
+
+- The ability for a workspace manager to create artifacts in the workspace
+- Journals. Tiles view mode
+- Journals. Data preview dashboard with ability to configure widgets
+- Journals. Added a menu widget to the data preview dashboard. It's providing a dynamic tree-like representation of the category structure
+- Updated design of the SelectJournal and SelectOrgstruct components
+- Gantt chart widget to visualize the project work plan as a timeline
+- Workspace. Users assigned the Workspace Manager role are authorized to create local artifacts, such as data types, journals, forms, BPMN processes, DMN, etc
+- Select Journal Component. Ability to select workspaces to search and agregate data within
+- Data lists. Unified dashboard, special dashboards for Сounterparties, Legal Entities
+- Setting to hide the Create button in the left menu
+- Menu setting. The ability to collapse a section by default
+- Menu setting. The ability to specify attributes from the workspace in an arbitrary menu item
+- Action widget. The ability to add two buttons to one verdict on the form
+- Journal widget. Setting to hide create new entry button in a journal
+- Group journal. User journal. Gonfigured data import from XLS
+- Knowledge Base improvements
+- Module Contracts improvements
+
+### Fixed
+
+- "Full name" field is cleared on the editing form
+- Computed value not returned correctly for arrays of associations
+- Error in the "Download all documents" action
+- Error is duplicated on workspace when editing a card
+- Stack trace is shown on IllegalStateException
+- Checkbox: hidden property does not changed by logic action, 
+- Checkbox: checkbox with true/false status is displayed incorrectly
+- Menu. No filtering for the list
+- Admin section workspace. Incorrect dashboard editing
+- The button for resizing the comment/note field does not work
+
 ## [2025.5] - 2025-08-01
 
 ### Added
@@ -17,7 +52,7 @@
 - WYSIWYG editor improvements
 - Table form. Ability to select record from data-list
 
-#### Fixed
+### Fixed
 
 - Onlyoffice. Wrong displayed cursor when editing a file
 - Menu. Editing menu for a default workspace
@@ -34,7 +69,7 @@
 - Add orgstructure into WS Datalists
 - New fields in common data lists
 
-#### Fixed
+### Fixed
 
 - Heatmap. Incorrect simplified mode
 - Widget Knowledge Base permissions
@@ -69,7 +104,7 @@
 - Orgstructure component. Ability to set dynamically the root group (via scripts depending on the conditions on the form)
 - React JS updated to version 18.3
 
-#### Fixed
+### Fixed
 
 - Template generation functionality problem after upgrading transformation microservice version
 - Service desk. Mis-calculatings in SLA, resolution field, incorrect due date calculation
@@ -100,7 +135,7 @@
 - Journals. Optimized data loading and data display
 - Doclib. Uploading multiple files, folder with subfolders and files, deleting and moving files and folders, validation of identical files
 
-#### Fixed
+### Fixed
 
 - Data type is ignored when uploading to excel
 - SLA doesn't change when the priority is changed
