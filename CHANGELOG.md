@@ -11,6 +11,8 @@
 - The developer console for administrators. Allows executing JavaScript code directly in the browser with results displayed
 - Assignment form. Description field editor replaced from CKEditor to Lexical
 - Сonfigurable status change capability to DocStatus widget
+- WYSIWYG editor. Automatic Markdown format detection
+- Server-side localization support
 - Data type. The ability to set rules for generating the local part of the identifier
 - Extend validation pattern for data model values in BPMN forms
 
