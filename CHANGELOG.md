@@ -4,6 +4,26 @@
 
 # Citeck Changelog
 
+## [2026.1] - 2026-03-ХХ
+
+### Added
+
+- The developer console for administrators. Allows executing JavaScript code directly in the browser with results displayed.
+- Assignment form. Description field editor replaced from CKEditor to Lexical
+- Сonfigurable status change capability to DocStatus widget
+- Extend validation pattern for data model values in BPMN forms
+
+### Fixed
+
+- Deleted entries in local Forms and Journals are counted in the counters.
+- Options attribute is constantly updated with any changes in document
+- Search doesn't work for computed associations
+- Bpmn scheme does't move
+- Unexpected navigation to the default workspace
+- Script task. Incorrect throw error
+- The template of the print form breaks for an unreadable symbol
+- Error when adding a video to an attachment
+
 ## [2025.12] - 2025-12-30
 
 ### Added
