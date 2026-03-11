@@ -8,15 +8,15 @@
 
 ### Added
 
-- The developer console for administrators. Allows executing JavaScript code directly in the browser with results displayed.
+- The developer console for administrators. Allows executing JavaScript code directly in the browser with results displayed
 - Assignment form. Description field editor replaced from CKEditor to Lexical
 - Сonfigurable status change capability to DocStatus widget
-- Data type. The ability to set rules for generating the local part of the identifier.
+- Data type. The ability to set rules for generating the local part of the identifier
 - Extend validation pattern for data model values in BPMN forms
 
 ### Fixed
 
-- Deleted entries in local Forms and Journals are counted in the counters.
+- Deleted entries in local Forms and Journals are counted in the counters
 - Options attribute is constantly updated with any changes in document
 - Search doesn't work for computed associations
 - Bpmn scheme does't move
