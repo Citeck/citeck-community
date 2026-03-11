@@ -16,6 +16,7 @@
 - Server-side localization support
 - Data type. The ability to set rules for generating the local part of the identifier
 - Extend validation pattern for data model values in BPMN forms
+- Added hoursPerDay (person-days) mode to DurationFormatter
 
 ### Fixed
 
