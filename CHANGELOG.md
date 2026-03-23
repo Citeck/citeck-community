@@ -9,6 +9,8 @@
 ### Added
 
 - The developer console for administrators. Allows executing JavaScript code directly in the browser with results displayed
+- Journals. Exporting data to HTML, Excel, or CSV files
+- Journals. Importing files (Excel) into the system using a template, importing users and groups
 - Assignment form. Description field editor replaced from CKEditor to Lexical
 - Сonfigurable status change capability to DocStatus widget
 - WYSIWYG editor. Automatic Markdown format detection
@@ -28,6 +30,7 @@
 - Script task. Incorrect throw error
 - The template of the print form breaks for an unreadable symbol
 - Error when adding a video to an attachment
+- The Select Orgstruct component is not displayed on the form in inline editing mode.
 
 ## [2025.12] - 2025-12-30
 
