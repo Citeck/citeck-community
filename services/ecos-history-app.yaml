@@ -7,7 +7,7 @@ services:
     hostname: ecos-history-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-history:2.23.0
+    image: nexus.citeck.ru/ecos-history:2.24.0
     ports:
       - 18024:18024/tcp
     environment:

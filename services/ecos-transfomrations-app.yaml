@@ -7,7 +7,7 @@ services:
     hostname: ecos-transformations-app
     restart: always
     stop_grace_period: 1m
-    image: nexus.citeck.ru/ecos-transformations:1.17.8
+    image: nexus.citeck.ru/ecos-transformations:1.20.0
     ports:
       - 18029:18029/tcp
     environment:
