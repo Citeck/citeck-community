@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://ecos-microservices-postgresql-app:5432/ecos_integrations
+    username: integrations
+    password: integrationspassword

@@ -207,3 +207,14 @@ services:
         condition: service_healthy
       rabbitmq-app:
         condition: service_healthy
+  ecos-integrations-app:
+    extends:
+      file: ./services/ecos-integrations-app.yaml
+      service: app
+    depends_on:
+      ecos-microservices-postgresql-app:
+        condition: service_healthy
+      ecos-registry-app:
+        condition: service_healthy
+      rabbitmq-app:
+        condition: service_healthy
