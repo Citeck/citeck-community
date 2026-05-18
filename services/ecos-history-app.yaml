@@ -18,7 +18,11 @@ services:
       - ./ecos-community-demo-data/ecos-history-app/source:/source
       - ./ecos-community-demo-data/ecos-history-app/errors:/errors
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:18024/management/health"]
+      test:
+        - CMD
+        - bash
+        - -c
+        - 'exec 3<>/dev/tcp/localhost/18024; printf "GET /management/health HTTP/1.0\r\nHost: x\r\n\r\n" >&3; grep -q ''"status":"UP"'' <&3'
       interval: 20s
       timeout: 20s
       retries: 36

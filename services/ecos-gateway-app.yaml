@@ -13,7 +13,11 @@ services:
     env_file:
       - ./environments/ecos-gateway-app.env
     healthcheck:
-      test: ["CMD", "wget", "-q", "--spider", "http://localhost:8085/management/health"]
+      test:
+        - CMD
+        - bash
+        - -c
+        - 'exec 3<>/dev/tcp/localhost/8085; printf "GET /management/health HTTP/1.0\r\nHost: x\r\n\r\n" >&3; grep -q ''"status":"UP"'' <&3'
       interval: 20s
       timeout: 20s
       retries: 36
