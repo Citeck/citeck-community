@@ -113,35 +113,30 @@ local opts = {
   end
   
   local userName;
-  
-  -- TODO: remove this checks
-  -- this checks doesn't required now because this locations doesn't protected by oidc
-  if string.find(ngx.var.request_uri, "/healthcheck/") then
-    userName = "service_healthcheck";
+
+  -- Match only the request PATH for the shortcuts below. request_uri also holds
+  -- the query string, so matching against it lets an unauthenticated client
+  -- smuggle a marker via a query parameter (e.g. ?probe=/healthcheck/), bypassing
+  -- OIDC. Cut at the first query delimiter, treating an encoded "?" (%3f) as one
+  -- too since nginx leaves request_uri undecoded.
+  local reqPath = ngx.var.request_uri
+  local queryStart = reqPath:find("?", 1, true)
+  local encQuery = reqPath:find("%%3[fF]")
+  if encQuery and (not queryStart or encQuery < queryStart) then queryStart = encQuery end
+  if queryStart then
+    reqPath = reqPath:sub(1, queryStart - 1)
   end
   
-  if string.find(ngx.var.request_uri, "/rabbitmq") then
+  
+  
+  
+  
+  
+  if string.find(reqPath, "/alfresco/monitoring") then
     userName = "guest";
   end
   
-  if string.find(ngx.var.request_uri, "/node%-exporter") then
-    userName = "guest";
-  end
-  
-  if string.find(ngx.var.request_uri, "/postgres%-exporter") then
-    userName = "guest";
-  end
-  
-  if string.find(ngx.var.request_uri, "/cadvisor/") then
-    userName = "guest";
-  end
-  -- END TODO: remove this checks
-  
-  if string.find(ngx.var.request_uri, "/alfresco/monitoring") then
-    userName = "guest";
-  end
-  
-  if string.find(ngx.var.request_uri, "/logout") then
+  if string.find(reqPath, "/logout") then
     ngx.header["Set-Cookie"] = "JSESSIONID=; Path=/share/; HttpOnly";
   end
   
