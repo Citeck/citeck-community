@@ -4,6 +4,17 @@
 
 **На других языках: [Английский](README.md)**
 
+> [!WARNING]
+> **Данный репозиторий устарел и более не будет обновляться.**
+>
+> Описанный здесь способ развертывания через Docker Compose устарел и полностью заменен на
+> [**Citeck Launcher**](https://citeck.github.io/citeck-launcher/). Для установки и запуска Citeck Community
+> используйте Citeck Launcher. Инструкции по Docker Compose ниже сохранены только для справки и могут не работать
+> с актуальными версиями Citeck.
+>
+> Если Citeck уже развернут через Docker Compose, перенесите данные на Citeck Launcher по инструкции
+> [Миграция данных с docker-compose](https://citeck-ecos.readthedocs.io/ru/latest/admin/launch_setup/launcher_server/migration_from_compose.html).
+
 Данный репозиторий представляет собой настройку Docker Compose для запуска «Citeck Community». 
 
 **Citeck** – система управления корпоративным контентом, позволяющая управлять бизнес-процессами, документами и задачами.
@@ -13,15 +24,17 @@
 Убедитесь, что установлены следующие необходимые компоненты и соблюдены требования к ОЗУ:
 
 - Docker: [Установка Docker](https://docs.docker.com/engine/install/)
-- Docker Compose: [Установка Docker Compose](https://docs.docker.com/compose/install/) (не нужен при установке с использованием Citeck launcher)
+- Docker Compose: [Установка Docker Compose](https://docs.docker.com/compose/install/) (только для устаревшего способа через Docker Compose, для Citeck Launcher не нужен)
 - 16 ГБ ОЗУ для корректной работы Docker
 
 ## Установка
 
-Citeck Community можно развернуть с использованием удобного **кросплатформенного лончера** или c помощью Docker Compose.
+Citeck Community разворачивается с помощью **кроссплатформенного Citeck Launcher**. Ручное развертывание через Docker Compose устарело и более не поддерживается.
 
 <details>
-  <summary>Citeck launcher</summary>
+  <summary>Citeck Launcher (рекомендуемый способ)</summary>
+
+Подробнее о Citeck Launcher — на сайте [citeck.github.io/citeck-launcher](https://citeck.github.io/citeck-launcher/).
 
 1. Скачайте актуальный дистрибутив **citeck-launcher** для вашей ОС со [страницы релизов](https://github.com/Citeck/citeck-launcher/releases) и запустите.
 
@@ -42,7 +55,10 @@ Citeck Community можно развернуть с использованием
 </details>
 
 <details>
-  <summary>Docker Compose</summary>
+  <summary>Docker Compose (устарело, не поддерживается)</summary>
+
+> [!CAUTION]
+> Этот способ устарел и более не сопровождается. Используйте Citeck Launcher. Для переноса данных с существующего стенда воспользуйтесь инструкцией [Миграция данных с docker-compose](https://citeck-ecos.readthedocs.io/ru/latest/admin/launch_setup/launcher_server/migration_from_compose.html).
 
 1. **Клонируйте** репозиторий:
 

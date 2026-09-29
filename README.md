@@ -4,6 +4,17 @@
 
 **Read this in other languages: [Русский](README.RU.MD)**
 
+> [!WARNING]
+> **This repository is deprecated and will no longer be updated.**
+>
+> The Docker Compose deployment method described here is obsolete and has been fully replaced by
+> [**Citeck Launcher**](https://citeck.github.io/citeck-launcher/en/). Please use Citeck Launcher to install and run
+> Citeck Community. The Docker Compose instructions below are kept for reference only and may not work with
+> current Citeck versions.
+>
+> If Citeck is already deployed with Docker Compose, migrate your data to Citeck Launcher following the
+> [Data migration from docker-compose](https://citeck-ecos.readthedocs.io/en/latest/admin/launch_setup/launcher_server/migration_from_compose.html) guide.
+
 This repository provides a Docker Compose setup for running the `Citeck Community`. The Citeck is an
 enterprise content management system that allows managing business processes, documents, and tasks.
 
@@ -12,15 +23,17 @@ enterprise content management system that allows managing business processes, do
 Make sure you have the following prerequisites installed on your system:
 
 - Docker: [Install Docker](https://docs.docker.com/engine/install/)
-- Docker Compose: [Install Docker Compose](https://docs.docker.com/compose/install/) (not required when installing using Citeck launcher)
+- Docker Compose: [Install Docker Compose](https://docs.docker.com/compose/install/) (only for the deprecated Docker Compose method, not required for Citeck Launcher)
 - 16 gb RAM for docker engine
 
 ## Installation
 
-You can deploy Citeck Community using either a convenient **Citeck cross-platform launcher** or manually using Docker Compose.
+Citeck Community is deployed using the **Citeck cross-platform launcher**. Manual deployment with Docker Compose is deprecated and no longer supported.
 
 <details>
-  <summary>Citeck launcher</summary>
+  <summary>Citeck Launcher (recommended)</summary>
+
+Learn more about Citeck Launcher on its website: [citeck.github.io/citeck-launcher](https://citeck.github.io/citeck-launcher/en/).
 
 1. Download the latest **citeck-launcher distrib** for your OS from [the releases page](https://github.com/Citeck/citeck-launcher/releases) and run it.
 
@@ -41,7 +54,10 @@ You can deploy Citeck Community using either a convenient **Citeck cross-platfor
 </details>
 
 <details>
-  <summary>Docker Compose</summary>
+  <summary>Docker Compose (deprecated, not supported)</summary>
+
+> [!CAUTION]
+> This method is obsolete and is no longer maintained. Use Citeck Launcher instead. To move data from an existing installation, see [Data migration from docker-compose](https://citeck-ecos.readthedocs.io/en/latest/admin/launch_setup/launcher_server/migration_from_compose.html).
 
 1. **Clone** this repository:
 
